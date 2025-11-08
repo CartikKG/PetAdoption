@@ -17,6 +17,7 @@ app.get('/', async(req,res)=>{
 
 return res.json({message:"Hello World"});
 });
+app.use('/api/auth', require('./routes/auth'));
 app.use('/api/pets', require('./routes/pets'));
 app.use('/api/adoptions', require('./routes/adoptions'));
 

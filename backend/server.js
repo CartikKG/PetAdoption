@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://kartikguptampi_db_use
   useUnifiedTopology: true,
 });
 
-app.use('/', async(req,res)=>{
+app.get('/', async(req,res)=>{
 
 return res.json({message:"Hello World"});
 });
